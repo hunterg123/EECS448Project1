@@ -9,7 +9,6 @@ Ship::~Ship(){
 
 }
 void Ship::setShipNumber(int shipnum){
-  //shipnumber = shipnum;
   int num = shipnum;
   for (int i=0; i< num; i++){
     shipnumber = shipnumber+shipnum;
