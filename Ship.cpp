@@ -9,11 +9,17 @@ Ship::~Ship(){
 
 }
 void Ship::setShipNumber(int shipnum){
-  shipnumber = shipnum;
+  //shipnumber = shipnum;
+  int num = shipnum;
+  for (int i=0; i< num; i++){
+    shipnumber = shipnumber+shipnum;
+    shipnum--;
+  }
 }
 int Ship::getShipNumber(){
   return shipnumber;
 }
+/*
 bool Ship::checkPosition(int row, int col, int sizeofship, string direction){
   if (direction == "up" && col+sizeofship <= 10){
     return true;
@@ -31,6 +37,7 @@ bool Ship::checkPosition(int row, int col, int sizeofship, string direction){
     return false;
   }
 }
+*/
 void Ship::setHit(){
   hit++;
 }

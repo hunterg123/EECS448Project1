@@ -43,7 +43,6 @@ void Executive::run()
 		player1.SetNumShips(shipnum); //decalers number of ships for both players
 		shipofplayer1.setShipNumber(shipnum);
 
-
 		if (shipnum < 1 || shipnum > 5)
 		{
 			cout << "Invaild number of ships!\n";
