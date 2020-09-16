@@ -56,9 +56,6 @@ void Executive::run()
 
 	cout << "How many ships do you want to place in the grid (choose from 1 to 5)? ";
 	cin >> shipnum;
-	player1.SetNumShips(shipnum); //decalers number of ships for both players
-	shipofplayer1.setShipNumber(numShipCoords(shipnum));
-
 
 	if (shipnum < 1 || shipnum > 5)
 	{
@@ -71,6 +68,9 @@ void Executive::run()
 		//cout << "Invaild number of ships!\n";
 		//goto chooseShipNum1;
 	}
+
+	player1.SetNumShips(shipnum); //decalers number of ships for both players
+	shipofplayer1.setShipNumber(numShipCoords(shipnum));
 
 	for (int i = 1; i <= shipnum; i++)
 	{
