@@ -38,7 +38,9 @@ class Board
 
 	private:
 		int numRows = 9;      // Numbers (1-9)
-		int numCols = 9;      // Letters (A-I)
+		int numCols = 9; 
+		int numRowsXL = 20;
+		int numColsXL = 20;     // Letters (A-I)
 };
 
 
