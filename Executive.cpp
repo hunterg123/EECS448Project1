@@ -52,8 +52,10 @@ void Executive::run()
 	char c_col; // char version of the column
 	Ship shipofplayer1;
 	Ship shipofplayer2;
+	char x;
 
-
+	cout << "Would you like to play normal Battleship or BattleshipXL? (N/X)";
+	cin >> x;
 	cout << "How many ships do you want to place in the grid (choose from 1 to 5)? ";
 	cin >> shipnum;
 	player1.SetNumShips(shipnum); //decalers number of ships for both players
