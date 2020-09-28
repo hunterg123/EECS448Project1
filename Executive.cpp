@@ -52,16 +52,18 @@ void Executive::run()
 	char c_col; // char version of the column
 	Ship shipofplayer1;
 	Ship shipofplayer2;
+	char x;
 
-
-	cout << "How many ships do you want to place in the grid (choose from 1 to 5)? ";
+	cout << "Would you like to play normal Battleship or BattleshipXL? (N/X)";
+	cin >> x;
+	cout << "How many ships do you want to place in the grid (choose from 1 to 10)? ";
 	cin >> shipnum;
 
-	if (shipnum < 1 || shipnum > 5)
+	if (shipnum < 1 || shipnum > 10)
 	{
 		while (!(cin >> shipnum))
 		{
-			cout << "Invalid! Must be 1-5!: ";
+			cout << "Invalid! Must be 1-10!: ";
 			cin.clear();
 			cin.ignore(123, '\n');
 		}
