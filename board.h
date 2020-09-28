@@ -10,7 +10,8 @@ class Board
 		/**
  		* @pre: initializes a blank 9x9 board with '-' values
  		**/
-		Board();   	    // Constructor
+	 	Board();				//Constructor
+		Board(bool big);   	    // Constructor
 		~Board();  	    // Destructor
 
 		/**
@@ -36,11 +37,9 @@ class Board
 
 		char m_board[9][9];  
 
-	private:
-		int numRows = 9;      // Numbers (1-9)
-		int numCols = 9; 
-		int numRowsXL = 20;
-		int numColsXL = 20;     // Letters (A-I)
+	private:  
+		int numRows = 9;
+		int numCols = 9;  // Letters (A-I)
 };
 
 

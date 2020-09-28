@@ -1,7 +1,21 @@
 #include "board.h"
 
-Board::Board()
+Board:: Board()
 {
+	for(int i=0; i<numRows; i++)
+	{
+		for(int j=0; j<numCols; j++)
+		{
+			m_board[i][j] = '-';
+		}
+	}
+}
+Board:: Board(bool big)
+{
+	if(big = true) {
+		numRows = 20;
+		numCols = 20;
+	}
 	for(int i=0; i<numRows; i++)
 	{
 		for(int j=0; j<numCols; j++)
